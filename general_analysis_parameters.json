@@ -1,0 +1,23 @@
+{
+    "DataSetPath": "D:/Documents/dataset1.csv",
+    "FeaturesColumns": [
+        "Feature 1",
+        "Feature 7",
+        "Feature 3",
+        "Feature 0",
+        "Feature 5"
+    ],
+    "ComparisonColumn": "Column 1",
+    "Seed": "RANDOM",
+    "Number of PCs": "3",
+    "Kmeans": {
+        "Population 1": "4",
+        "Population 2": "6",
+        "Population 3": "4"
+    },
+    "Show Violin": true,
+    "Save Violin": true,
+    "Save Model": true,
+    "Show cluster info": true,
+    "Save dataframe": true
+}

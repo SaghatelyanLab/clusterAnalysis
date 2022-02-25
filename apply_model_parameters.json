@@ -1,0 +1,12 @@
+{
+  "DataSetPath": "D:\\Documents\\analyse\\dataset.csv",
+  "FeaturesColumns": ["Column 1", "Column 2", "Column 6", "Column 4", "Column 5"],
+  "ComparisonColumn": "Column 3",
+  "PCA model path": "D:\\Documents\\analyse\\saved_analysis\\seed\\PCA.pkl",
+  "Kmeans model path": "D:\\Documents\\analyse\\saved_analysis\\seed\\k_means_Origin_pop1_4_clusters.pkl",
+  "Show Violin": "True",
+  "Save Violin": "False",
+  "Save Model": "False",
+  "Show cluster info": "True",
+  "Save dataframe": "False"
+}

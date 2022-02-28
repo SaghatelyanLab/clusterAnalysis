@@ -46,6 +46,10 @@ Start console and move to the folder where the code was downloaded.
 
 Windows (command prompt) : 
 Go to the repository of python, shift + right click "open command prompt here"
+
+Go back to the Code folder
+`cd path_to_code_folder`
+
 ```
 python -m venv clusterAnalysis
 cd clusterAnalysis/Scripts
@@ -56,9 +60,13 @@ pip install -r requirements.txt
 
 Windows (Powershell) :
 Go to the repository of python, shift + right click "open powershell here"
+
+Go back to the Code folder
+`cd path_to_code_folder`
+
 ```
 python -m venv clusterAnalysis
-cd .\clusteringAnalyse\Scripts\
+cd .\clusterAnalyse\Scripts\
 .\activate
 cd ../..
 pip install -r requirements.txt
@@ -66,9 +74,13 @@ pip install -r requirements.txt
 
 MacOS/Linux : 
 Note that MacOS and Linux often provides both python2 and python3. If you use MacOS or Linux you should probably replace all python calls to python3.
+
+Go back to the Code folder
+`cd path_to_code_folder`
+
 ```
 python3 -m venv clusterAnalysis
-source clusteringAnalyse/Scripts/activate
+source clusterAnalyse/Scripts/activate
 pip install -r requirements.txt
 ```
 

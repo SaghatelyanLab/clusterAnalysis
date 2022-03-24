@@ -168,7 +168,7 @@ def general_population_violin(subfeatures_df: dict[str, Any], seed: int, cols: l
                 fig.add_trace(
                     go.Violin(y=violin_y,
                               x=[key] * len(df2),
-                              name=str(cluster), box={"visible": True}, points="all", meanline={"visible": True},
+                              name=f"{key} {cluster}", box={"visible": True}, points="all", meanline={"visible": True},
                               line_color=colorDict[f"{key} {cluster}"], opacity=0.6))
                 fig.update_layout(title=feature)
         if show_violin:

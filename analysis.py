@@ -82,15 +82,12 @@ def general_analysis(config_file: str = "general_analysis_parameters.json"):
         df = pd.read_csv(df_filename)
     else:
         df = pd.read_excel(df_filename)
+    df[cols].astype(float)
     df = df.dropna(subset=cols)
-    # if df.compare(df2):
-    #     print("NaN value had been found and removed")
     model = make_pipeline(
         StandardScaler(),
         PCA(n_components=pcs_number, random_state=seed, svd_solver="full"),
     )
-    print(df)
-    print(cols)
     model.fit(df[cols])
     if save_model:
         pickle.dump(model,

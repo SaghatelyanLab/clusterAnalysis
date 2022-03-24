@@ -5,7 +5,7 @@ Cluster analysis pipeline is a general code to investigate clusters in dataset.
 This pipeline was used to investigate clusters related to the migrations of different populations : https://www.cell.com/stem-cell-reports/fulltext/S2213-6711(22)00100-X
 
 However, this pipeline can be use for any biological dataset.
-Please if you use this code, please, cite us :
+Please if you use this code, cite us :
 
 `Ferreira A, Bressan C, Hardy SV, Saghatelyan A. Deciphering heterogeneous populations of migrating cells based on the computational assessment of their dynamic properties. Stem Cell Reports. 2022 Mar 17. `
 

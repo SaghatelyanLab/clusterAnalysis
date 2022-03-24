@@ -31,12 +31,26 @@ def data_parser(config_file: str) -> tuple[Any,  Any, Any, Any, Any, bool, bool,
     pop_comparison = parameters_json["ComparisonColumn"]
     pca_filepath = parameters_json["PCA model path"]
     kmeans_filepath = parameters_json["Kmeans model path"]
-    show_violin = bool(parameters_json["Show Violin"].lower() == "true")
-    save_violin = bool(parameters_json["Save Violin"].lower() == "true")
-    save_model = bool(parameters_json["Save Model"].lower() == "true")
-    show_cluster_info = bool(parameters_json["Show cluster info"].lower() == "true")
-    save_df = bool(parameters_json["Save dataframe"].lower() == "true")
-
+        if isinstance(parameters_json["Show Violin"], bool):
+        show_violin = parameters_json["Show Violin"]
+    else:
+        show_violin = bool(parameters_json["Show Violin"].lower() == "true")
+    if isinstance(parameters_json["Save Violin"], bool):
+        save_violin = parameters_json["Save Violin"]
+    else:
+        save_violin = bool(parameters_json["Save Violin"].lower() == "true")
+    if isinstance(parameters_json["Save Model"], bool):
+        save_model = parameters_json["Save Model"]
+    else:
+        save_model = bool(parameters_json["Save Model"].lower() == "true")
+    if isinstance(parameters_json["Show cluster info"], bool):
+        show_cluster_info = parameters_json["Show cluster info"]
+    else:
+        show_cluster_info = bool(parameters_json["Show cluster info"].lower() == "true")
+    if isinstance(parameters_json["Save dataframe"], bool):
+        save_df = parameters_json["Save dataframe"]
+    else:
+        save_df = bool(parameters_json["Save dataframe"].lower() == "true")
     return df_filepath, cols, pop_comparison, pca_filepath, kmeans_filepath, show_violin, save_violin, \
            save_model, show_cluster_info, save_df
 

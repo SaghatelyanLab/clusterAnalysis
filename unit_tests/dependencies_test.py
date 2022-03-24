@@ -15,7 +15,6 @@ def test_pca():
     """
     seed = 123456789
     df = pd.read_csv("general_population.csv")
-    print(df.columns)
     cols = ["feature1", "feature2", "feature3", "feature4", "feature5"]
     x = df[cols]
     pca = PCA(n_components=3, random_state=seed, svd_solver="full")

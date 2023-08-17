@@ -1,6 +1,6 @@
 atomicwrites==1.4.0
 attrs==21.4.0
-certifi==2021.10.8
+certifi==2023.7.22
 colorama==0.4.4
 et-xmlfile==1.1.0
 iniconfig==1.1.1

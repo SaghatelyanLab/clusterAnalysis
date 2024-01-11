@@ -81,7 +81,7 @@ Go back to the Code folder
 
 ```
 python3 -m venv clusterAnalysis
-source clusterAnalysis/Scripts/activate
+source clusterAnalysis/bin/activate
 pip install -r requirements.txt
 ```
 

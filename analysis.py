@@ -114,7 +114,7 @@ def general_analysis(config_file: str = "general_analysis_parameters.json"):
         if show_cluster_info:
             extracted_pop_df[cols] = extracted_pop_df[cols].astype(np.float64)
             print("Mean : \n", extracted_pop_df[cols + pca_cols].mean())
-            print("Mean of each cluster : \n", extracted_pop_df.groupby([f"{subpop} clusters"]).mean()[cols + pca_cols])
+            print("Mean of each cluster : \n", extracted_pop_df.groupby([f"{subpop} clusters"])[cols + pca_cols].mean())
             print(f"{subpop} {k_means_dict[subpop]} clusters", collections.Counter(subpop_kmeans.labels_))
     if show_violin is True or save_violin is True:
         general_population_violin(subpop_dict, seed, cols, pca_cols, show_violin, save_violin)

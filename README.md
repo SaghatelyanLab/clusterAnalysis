@@ -67,7 +67,7 @@ Go back to the Code folder
 
 ```
 python -m venv clusterAnalysis
-cd .\clusterAnalyse\Scripts\
+cd .\clusterAnalysis\Scripts\
 .\activate
 cd ../..
 pip install -r requirements.txt
@@ -81,7 +81,7 @@ Go back to the Code folder
 
 ```
 python3 -m venv clusterAnalysis
-source clusterAnalyse/Scripts/activate
+source clusterAnalysis/Scripts/activate
 pip install -r requirements.txt
 ```
 
